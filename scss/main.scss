@@ -1,0 +1,153 @@
+$primary-color: #444;
+$font-primary-color: #f5f5f5;
+$set-vh: vh;
+
+// Set text colour
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $font-dark-primary-color;
+  } @else {
+    @return $font-primary-color;
+  }
+}
+
+html {
+  font-size: 62.5%; //This way, 1rem = 10px, making it easier to define my text-sizes through the document
+}
+
+// mixin making 1 rem
+@mixin fontsize($size) {
+  font-size: $size * 1px;
+  font-size: $size * 0.1rem;
+}
+
+// * Overall Style
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  // Remove scroll bar from body (so I can set this on my wrapper instead)
+  overflow: hidden;
+  // Set main text colour
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+
+  // Set font sizes
+  font-size: 20px;
+  text-align: right;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  // Links
+
+  // Wrapper & Slides
+  .outer-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    // Smooth scroll
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat($set-vh);
+    scroll-snap-type: y mandatory;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 500vh; // so each slide occupies exactly the viewfinder height
+    width: 100vw;
+  }
+
+  .slide {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+
+  #home {
+    background-color: pink;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  #about {
+    background-color: palevioletred;
+  }
+
+  #skills {
+    background-color: plum;
+  }
+
+  #projects {
+    background-color: purple;
+
+    // Align title and projects area within the section area
+    display: flex;
+    flex-direction: column;
+
+    // Implement horizontal scroll
+    .projects-wrapper {
+      background-color: teal;
+      height: 80vw;
+
+      overflow-y: scroll; // enable horizontal scroll
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+
+      .h-slides-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+
+        .h-slide {
+          // individual slide
+          width: 100vw;
+          height: 80vh;
+          scroll-snap-align: center;
+        }
+      }
+    }
+  }
+
+  #contact {
+    background-color: magenta;
+  }
+}

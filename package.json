@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "Sandra's Portfolio V2",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HotSauceNinja/portfolio_v2.git"
+  },
+  "author": "Sandra Spighel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HotSauceNinja/portfolio_v2/issues"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
