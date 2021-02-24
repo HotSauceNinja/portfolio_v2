@@ -63,6 +63,30 @@ body {
     }
   }
 
+  span {
+    &.primary-color {
+      color: $font-primary-color;
+      &:hover {
+        animation: blinkingTextAccentPrimaryAccent 2s infinite;
+      }
+    }
+
+    &.accent-color {
+      color: $font-accent-color;
+      &:hover {
+        animation: blinkingTextAccentPrimaryAccent 2s infinite;
+      }
+    }
+
+    &.secondary-accent-color {
+      color: $font-secondary-accent-color;
+      &:hover {
+        animation: blinkingTextAccentPrimaryAccent 2s infinite;
+      }
+    }
+  }
+
+  // * Website Navigation - Smooth Scroll & Scroll Snap
   // Wrapper & Slides
   .outer-wrapper {
     width: 100vw;
