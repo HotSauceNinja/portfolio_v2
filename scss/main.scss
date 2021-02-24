@@ -173,7 +173,27 @@ body {
   // * Skills Page
   //todo *************************************
   #skills {
-    background-color: plum;
+    .skills-wrap {
+      padding-top: 3rem;
+      height: 80vh;
+      padding-left: 10%;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      // width: 70%;
+
+      .skill {
+        flex: 1 0 15%;
+        display: block;
+        text-align: center;
+        margin: 1%;
+        // margin-right: 10px;
+        // margin: 10px 0 0 2%;
+      }
+    }
   }
 
   // * Projects Page
