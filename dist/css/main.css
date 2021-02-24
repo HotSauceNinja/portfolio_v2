@@ -212,4 +212,38 @@ body {
       body #projects #project-navigation-menu .project-link {
         padding: 1.5rem 1rem 0 0; }
   body #contact {
-    background-color: magenta; }
+    display: flex;
+    flex-direction: column; }
+    body #contact .contact-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 6rem 0 6rem 0; }
+      body #contact .contact-wrapper .contact-links {
+        display: flex;
+        flex-basis: 10%;
+        justify-content: center; }
+        body #contact .contact-wrapper .contact-links .icon-wrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          body #contact .contact-wrapper .contact-links .icon-wrapper a {
+            padding: 0 1rem 0 1rem; }
+      body #contact .contact-wrapper .contact-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        justify-content: flex-end;
+        text-align: left; }
+        body #contact .contact-wrapper .contact-text-wrapper h5 {
+          font-weight: 400;
+          margin-bottom: 6rem;
+          margin-right: 2rem; }
+        body #contact .contact-wrapper .contact-text-wrapper h3 {
+          padding-bottom: 20%; }
+        body #contact .contact-wrapper .contact-text-wrapper span {
+          color: #ffff00; }
+        body #contact .contact-wrapper .contact-text-wrapper a {
+          color: #ff0000; }
+          body #contact .contact-wrapper .contact-text-wrapper a:hover {
+            animation: blinkingTextAccentPrimaryAccent 1.2s infinite; }
