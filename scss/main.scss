@@ -2,6 +2,7 @@
 @import "_variables.scss";
 
 // * Overall Style
+//todo *************************************
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -64,6 +65,7 @@ body {
   a {
     color: set-text-color($primary-color);
     text-decoration: none;
+
     &:hover {
       color: $font-accent-color;
     }
@@ -83,16 +85,10 @@ body {
         animation: blinkingTextAccentPrimaryAccent 2s infinite;
       }
     }
-
-    &.secondary-accent-color {
-      color: $font-secondary-accent-color;
-      &:hover {
-        animation: blinkingTextAccentPrimaryAccent 2s infinite;
-      }
-    }
   }
 
   // * Website Navigation - Smooth Scroll & Scroll Snap
+  //todo *************************************
   // Wrapper & Slides
   .outer-wrapper {
     width: 100vw;
@@ -118,6 +114,8 @@ body {
     scroll-snap-align: start;
   }
 
+  // * Home Page
+  //todo *************************************
   #home {
     display: flex;
     flex-direction: column;
@@ -127,14 +125,59 @@ body {
     padding-left: 10rem;
   }
 
+  // * About Page
+  //todo *************************************
   #about {
-    background-color: palevioletred;
+    // background-color: palevioletred;
+
+    .about-wrapper {
+      // background-color: teal;
+      height: 80vh;
+      display: flex;
+      flex-direction: row; // change to column for mobile
+      align-items: center;
+      justify-content: space-between;
+
+      .about-quote {
+        display: flex;
+        flex-grow: 1;
+        align-items: stretch;
+        padding: 3rem 3rem 0 6rem;
+
+        a {
+          color: $font-accent-color;
+
+          &:hover {
+            animation: blinkingTextAccentPrimaryAccent 2s infinite;
+          }
+        }
+      }
+
+      .about-text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        text-align: justify;
+
+        a {
+          color: $font-secondary-accent-color;
+
+          &:hover {
+            color: $font-accent-color;
+          }
+        }
+      }
+    }
   }
 
+  // * Skills Page
+  //todo *************************************
   #skills {
     background-color: plum;
   }
 
+  // * Projects Page
+  //todo *************************************
   #projects {
     background-color: purple;
 
@@ -174,7 +217,7 @@ body {
         width: 400vw;
 
         .h-slide {
-          // individual slide
+          // individual slide layout
           width: 100vw;
           height: 80vh;
           scroll-snap-align: center;
@@ -187,6 +230,8 @@ body {
     }
   }
 
+  // * Contact Page
+  //todo *************************************
   #contact {
     background-color: magenta;
   }
