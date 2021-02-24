@@ -199,33 +199,21 @@ body {
   // * Projects Page
   //todo *************************************
   #projects {
-    background-color: purple;
+    // Align title and projects area within the section area
+    display: flex;
+    flex-direction: column;
 
     h1 {
       padding: 0 8rem 0 0;
     }
 
-    // Align project navigation menu
-    #project-navigation-menu {
-      text-align: center;
-      padding: 2rem 0 2rem 0;
-
-      .project-link {
-        padding: 0 1rem 0 0;
-      }
-    }
-
     // Set wider page padding to allow projects to take up full width
     padding: 0;
 
-    // Align title and projects area within the section area
-    display: flex;
-    flex-direction: column;
-
     // Implement horizontal scroll
     .projects-wrapper {
-      background-color: teal;
-      height: 80vw;
+      // background-color: teal;
+      // height: 80vw;
 
       overflow-y: scroll; // enable horizontal scroll
       scroll-behavior: smooth;
@@ -241,11 +229,61 @@ body {
           width: 100vw;
           height: 80vh;
           scroll-snap-align: center;
-          background-color: red;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
 
           // Set project padding to line up with page padding
-          padding: 0 8rem 0 0;
+          padding: 2rem 8rem 0 6rem;
+
+          text-align: justify;
+
+          h5 {
+            text-align: left;
+          }
+
+          a {
+            color: $font-accent-color;
+            &:hover {
+              animation: blinkingTextAccentPrimaryAccent 2s infinite;
+            }
+          }
+
+          span > a {
+            color: $font-primary-color;
+            &:hover {
+              animation: blinkingTextAccentPrimaryAccent 1.2s infinite;
+            }
+          }
+
+          .project-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .project-text {
+            width: 80%;
+          }
+
+          .tech-list {
+            // font-weight: 800;
+            color: $font-secondary-accent-color;
+          }
         }
+      }
+    }
+
+    // Align project navigation menu
+    #project-navigation-menu {
+      text-align: center;
+      padding: 0 0 2rem 0;
+      font-size: 3rem;
+      font-weight: 800;
+
+      .project-link {
+        padding: 1.5rem 1rem 0 0;
       }
     }
   }
