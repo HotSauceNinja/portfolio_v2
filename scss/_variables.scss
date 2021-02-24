@@ -1,0 +1,36 @@
+$primary-color: #444;
+$font-primary-color: #f5f5f5;
+$font-accent-color: #ff0000;
+$set-vh: vh;
+
+// Transitions
+@mixin fastEaseOut {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin slowEaseOut {
+  transition: all 1.5s ease-in-out;
+}
+
+// Set text colour
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $font-dark-primary-color;
+  } @else {
+    @return $font-primary-color;
+  }
+}
+
+html {
+  font-size: 62.5%; //This way, 1rem = 10px, making it easier to define my text-sizes through the document
+}
+
+// mixin making 1 rem
+@mixin fontsize($size) {
+  font-size: $size * 1px;
+  font-size: $size * 0.1rem;
+}
