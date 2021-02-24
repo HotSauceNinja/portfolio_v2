@@ -184,6 +184,7 @@ body {
           flex-direction: column;
           align-items: center;
           justify-content: space-evenly;
+          overflow: hidden;
           padding: 2rem 8rem 0 6rem;
           text-align: justify; }
           body #projects .projects-wrapper .h-slides-wrapper .h-slide h5 {

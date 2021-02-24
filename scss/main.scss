@@ -234,6 +234,9 @@ body {
           align-items: center;
           justify-content: space-evenly;
 
+          // Remove scroll bar from projects and stops overlapping external contect
+          overflow: hidden;
+
           // Set project padding to line up with page padding
           padding: 2rem 8rem 0 6rem;
 
