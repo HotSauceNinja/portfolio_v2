@@ -48,3 +48,34 @@ html {
   font-size: $size * 1px;
   font-size: $size * 0.1rem;
 }
+
+// Media Query Mixins
+@mixin media-Xsmall {
+  @media screen and (max-width: 470px) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media screen and (min-width: 471px) and (max-width: 555px) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media screen and (min-width: 556px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin media-Xlarge {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

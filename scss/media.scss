@@ -1,0 +1,139 @@
+@import "variables";
+@import "menu";
+
+// Small Smartphone
+@include media-Xsmall {
+  body {
+    background-color: yellowgreen !important;
+    text-align: right;
+
+    .btn-logo {
+      left: 2rem;
+      top: 2rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      line-height: 1;
+    }
+
+    h1 {
+      font-size: 6rem;
+      padding-right: 2rem;
+    }
+
+    #home {
+      padding: 3rem 4rem 0 4rem;
+      line-height: 0;
+    }
+
+    #about {
+      display: flex;
+      flex-direction: column;
+
+      .about-quote,
+      #about > div > div.about-quote > h3 {
+        display: none !important;
+      }
+
+      .about-text {
+        display: block;
+        padding: 0 2.5rem;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    #skills {
+      .skills-wrap {
+        padding-top: 15%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        .skill {
+          flex: 1 0 15%;
+          display: block;
+          text-align: center;
+          margin: 1%;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    #projects {
+      h1 {
+        padding: 0 1rem !important;
+        font-size: 5rem;
+      }
+
+      .projects-wrapper {
+        .h-slide {
+          padding: 0 !important; //!
+
+          .project-image {
+            display: none !important;
+          }
+
+          .project-text {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    #contact {
+      h1 {
+        font-size: 5rem;
+      }
+
+      .contact-wrapper {
+        // background-color: lawngreen;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .contact-links {
+          display: flex;
+          justify-content: center;
+
+          .icon-wrapper {
+            a {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+
+        .contact-text-wrapper {
+          // background-color: lightblue;
+          padding-left: 2rem;
+
+          h5 {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            text-align: justify;
+          }
+
+          h3 {
+            padding: 0;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-small {
+  body {
+    background-color: plum !important;
+  }
+}
