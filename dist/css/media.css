@@ -180,6 +180,7 @@ html {
     line-height: 1.2 !important; }
   body section {
     padding-right: 4rem;
+    padding-top: 2rem;
     overflow: hidden; }
   body #home {
     padding-left: 5rem; }
@@ -221,6 +222,7 @@ html {
     line-height: 1.2 !important; }
   body section {
     padding: 0 8rem;
+    padding-top: 2rem;
     overflow: hidden; }
   body #about .about-text {
     padding-top: 4rem; }
