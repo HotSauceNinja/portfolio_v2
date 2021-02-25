@@ -176,7 +176,7 @@ body {
   #skills {
     .skills-wrap {
       padding-top: 3rem;
-      // height: 80vh;
+      //! height: 80vh;
       // padding-left: 10%;
 
       display: flex;
@@ -302,6 +302,7 @@ body {
       // background-color: lawngreen;
       height: 100%;
       display: flex;
+      flex-direction: column;
       //! flex-direction: row-reverse;  for screen media queries
       padding: 6rem 0 6rem 0;
 

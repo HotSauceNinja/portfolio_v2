@@ -57,7 +57,6 @@ html {
 
 @media screen and (max-width: 470px) {
   body {
-    background-color: yellowgreen !important;
     text-align: right; }
     body .btn-logo {
       left: 2rem;
@@ -103,8 +102,8 @@ html {
       font-size: 5rem; }
     body #projects .projects-wrapper .h-slide {
       padding: 0 !important; }
-      body #projects .projects-wrapper .h-slide .project-image {
-        display: none !important; }
+      body #projects .projects-wrapper .h-slide .project-image img {
+        width: 300px; }
       body #projects .projects-wrapper .h-slide .project-text p {
         font-size: 1rem; }
     body #contact h1 {
@@ -129,5 +128,34 @@ html {
           font-size: 2rem; } }
 
 @media screen and (min-width: 471px) and (max-width: 555px) {
-  body {
-    background-color: plum !important; } }
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important; }
+  body section {
+    padding: 0 2rem 0 2rem;
+    overflow: hidden; }
+  body #home {
+    padding-left: 4rem; }
+  body #about .about-wrapper {
+    flex-direction: column; }
+    body #about .about-wrapper .about-quote {
+      display: none !important; }
+  body #skills .skills-wrap {
+    height: 80vh; }
+  body #projects {
+    padding-top: 0; }
+    body #projects h1 {
+      padding: 0 2rem !important;
+      font-size: 5rem; }
+    body #projects p {
+      font-size: 1.2rem; }
+    body #projects .projects-wrapper .h-slide {
+      padding: 0 !important; }
+      body #projects .projects-wrapper .h-slide img {
+        width: 400px; }
+    body #projects #project-navigation-menu {
+      margin: 10px 0 0 0;
+      padding: 0; } }

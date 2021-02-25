@@ -4,7 +4,6 @@
 // Small Smartphone
 @include media-Xsmall {
   body {
-    background-color: yellowgreen !important;
     text-align: right;
 
     .btn-logo {
@@ -78,7 +77,10 @@
           padding: 0 !important; //!
 
           .project-image {
-            display: none !important;
+            // display: none !important;
+            img {
+              width: 300px;
+            }
           }
 
           .project-text {
@@ -134,6 +136,73 @@
 
 @include media-small {
   body {
-    background-color: plum !important;
+    .btn-logo {
+      left: 2rem;
+      top: 2rem;
+      font-size: 8rem;
+    }
+
+    h1 {
+      font-size: 8rem !important;
+    }
+
+    section {
+      padding: 0 2rem 0 2rem;
+      overflow: hidden;
+    }
+
+    #home {
+      padding-left: 4rem;
+    }
+
+    #about {
+      .about-wrapper {
+        flex-direction: column; // change to column for mobile
+
+        .about-quote {
+          display: none !important;
+        }
+      }
+    }
+
+    #skills {
+      .skills-wrap {
+        height: 80vh;
+      }
+    }
+
+    #projects {
+      padding-top: 0;
+
+      h1 {
+        padding: 0 2rem !important;
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .projects-wrapper {
+        .h-slide {
+          padding: 0 !important; //!
+
+          img {
+            width: 400px;
+          }
+        }
+      }
+
+      #project-navigation-menu {
+        margin: 10px 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@include media-medium {
+  body {
+    // background-color: indianred !important;
   }
 }
