@@ -139,6 +139,7 @@
   }
 }
 
+// Smartphone
 @include media-small {
   body {
     .btn-logo {
@@ -220,6 +221,7 @@
   }
 }
 
+// Tablets & Small Laptops
 @include media-medium {
   body {
     // background-color: indianred !important;
@@ -300,6 +302,7 @@
   }
 }
 
+// Desktops & Laptops
 @include media-large {
   body {
     .btn-logo {
@@ -365,6 +368,7 @@
   }
 }
 
+// Widescreens
 @include media-Xlarge {
   body {
     // background-color: lightblue !important;

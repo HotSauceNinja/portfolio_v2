@@ -13,9 +13,17 @@ by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/) - [HotSauceNinja
 - [Technology Used](#technology-used)
 - [Install](#install)
 - [Project Development](#project-development)
-
   - [Initial Idea](#initial-idea)
-
+  - [Set Up](#set-up)
+  - [Basic SCSS](#basic-scss)
+  - [Initial Idea](#initial-idea)
+  - [Icons](#icons)
+  - [Font](#font)
+  - [Smooth Scroll & Scroll Snap](#smooth-scroll-&-scroll-snap)
+  - [Menu](#menu)
+  - [Projects](#projects)
+  - [Contact](#Contact)
+  - [Media Queries](#media-queries)
 - [Final Thoughts & Project Wrap](#final-thoughts-and-project-wrap)
   - [Wins](#wins)
   - [Challenges / Bugs](#challenges-/-bugs)
@@ -433,3 +441,79 @@ And I added a navigation menu to help users navigate project pages if their brow
 I built the contact page using flexbox and styling with the same animation and transitions I used throughout the rest of the website. I used the flickering animation for the call to action with link, and the transitions to the social media icons linking to my profiles.
 
 Last, the contact page was also built using flexbox. I was keen to have a lot of space within the website, and especially on the contact page, so that the information and links stand out easily.
+
+## Media Queries
+
+I was keen to ensure my site can be viewed on as many devices as possible, so I wrote 5 different media queries based on the device screen size:
+
+```
+// Media Query Mixins:
+// Small Smartphone
+@mixin media-Xsmall {
+  @media screen and (max-width: 470px) {
+    @content;
+  }
+}
+
+// Smartphone
+@mixin media-small {
+  @media screen and (min-width: 471px) and (max-width: 555px) {
+    @content;
+  }
+}
+
+// Tablets & Small Laptops
+@mixin media-medium {
+  @media screen and (min-width: 556px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Desktops & Laptops
+@mixin media-large {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+// Widescreens
+@mixin media-Xlarge {
+  @media screen and (min-width: 1171px) {
+        @content;
+  }
+}
+```
+
+Due to having used flexbox throughout, the adjustments mainly had to do with font sizes and re-shaping the flexbox layout. Due to the height and width of very small screens, I decided not to display portfolio images for these devices, to ensure that all the written content is accessible. I have used different sized images for all other media queries.
+
+# Final Thoughts & Project Wrap
+
+I am overall happy with how the portfolio looks. There are small trims and changes I am thinking of, but the style and mood will remain similar.
+
+## Wins
+
+1. Feeling a lot more confident with event listeners, and working with the DOM again after learning React has also given me a stronger understanding of how the latter works.
+2. I learned to use scroll behavior for both horizontal and vertical scroll, and scroll snap.
+3. The overall look is what I had in mind, and I enjoyed pushing myself to try something different.
+
+## Challenges
+
+1. The horizontal scroll behavior has been challenging to begin with, and did not function correctly within V1 of the website. Re-doing the website and implementing the scroll behavior before doing any other styling has helped me understand its mechanics better. The solution (adding the numbers at the bottom so users can navigate to a project without scrolling) to the scroll issue also strengthens the overall user experience by offering a visual notification of the existance of other project slides.
+2. In V1, I split the skills in categories trying to keep them separate. However, this made the page feel cluttered and crowded. Removing the categories and simply grouping all skills within a wrapped layout has helped this section look al lot tidier and neater.
+3. Media queries were not easy to work with. What helped me progress was changing the background colour for each screen size and work my way through the website section by section adjusting as required. Choosing to use flexbox has cut down on a slot of the styling I had previously done in V1.
+
+## Key Learnings
+
+1. Horizontal and vertical scroll behavior, and scroll snap
+2. More practice with media queries
+3. Lots of practice with flexbox
+4. More parctice with SASS
+
+## Possible future features
+
+1. A toggle to change the background colour
+2. Implementing playful animations on the home page
+
+# License
+
+MIT
