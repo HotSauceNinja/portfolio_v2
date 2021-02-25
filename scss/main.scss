@@ -142,7 +142,7 @@ body {
       .about-quote {
         display: flex;
         flex-grow: 1;
-        align-items: stretch;
+        align-items: center;
         padding: 3rem 3rem 0 6rem;
 
         a {
@@ -309,7 +309,7 @@ body {
       .contact-links {
         display: flex;
         flex-basis: 10%;
-        justify-content: center;
+        // justify-content: center;
 
         .icon-wrapper {
           display: flex;

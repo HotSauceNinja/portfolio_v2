@@ -157,10 +157,13 @@ html {
     body #projects h1 {
       padding: 0 1rem !important;
       font-size: 5rem; }
+    body #projects h4,
+    body #projects h5 {
+      line-height: 1.2; }
     body #projects .projects-wrapper .h-slide {
       padding: 0 !important; }
       body #projects .projects-wrapper .h-slide .project-image img {
-        width: 300px; }
+        width: 250px; }
       body #projects .projects-wrapper .h-slide .project-text p {
         font-size: 1rem; }
     body #contact h1 {
@@ -202,6 +205,8 @@ html {
       display: none !important; }
   body #skills .skills-wrap {
     height: 80vh; }
+  body #skills div > div:nth-child(17) {
+    margin-top: 2.7rem !important; }
   body #projects {
     padding-top: 0; }
     body #projects h1 {
@@ -215,7 +220,52 @@ html {
         width: 400px; }
     body #projects #project-navigation-menu {
       margin: 10px 0 0 0;
-      padding: 0; } }
+      padding: 0; }
+  body #contact h1 {
+    padding: 0 2rem !important; }
+  body #contact .contact-links {
+    justify-content: center; } }
+
+@media screen and (min-width: 556px) and (max-width: 768px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 10rem !important;
+    line-height: 1.2 !important; }
+  body section {
+    padding-right: 4rem;
+    overflow: hidden; }
+  body #home {
+    padding-left: 5rem; }
+  body #about {
+    margin: 0; }
+    body #about .about-wrapper {
+      flex-direction: column !important;
+      justify-content: space-around; }
+      body #about .about-wrapper h3 {
+        text-align: right; }
+    body #about .about-quote {
+      padding: 0;
+      margin-left: 0; }
+    body #about .about-text {
+      margin-left: 2rem; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh; }
+  body #skills div > div:nth-child(17) {
+    margin-top: 3rem !important; }
+  body #projects h1 {
+    padding: 0 2rem !important;
+    font-size: 9rem !important; }
+  body #projects .projects-wrapper .h-slide {
+    padding: 0 !important; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+  body #contact .contact-text-wrapper {
+    padding: 10rem 0 0 4rem !important; } }
 
 * {
   box-sizing: border-box;
@@ -292,7 +342,7 @@ body {
     body #about .about-wrapper .about-quote {
       display: flex;
       flex-grow: 1;
-      align-items: stretch;
+      align-items: center;
       padding: 3rem 3rem 0 6rem; }
       body #about .about-wrapper .about-quote a {
         color: #ff0000; }
@@ -379,8 +429,7 @@ body {
       padding: 6rem 0 6rem 0; }
       body #contact .contact-wrapper .contact-links {
         display: flex;
-        flex-basis: 10%;
-        justify-content: center; }
+        flex-basis: 10%; }
         body #contact .contact-wrapper .contact-links .icon-wrapper {
           display: flex;
           flex-direction: row;
