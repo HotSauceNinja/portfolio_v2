@@ -209,3 +209,33 @@ html {
     justify-content: flex-end; }
   body #contact .contact-text-wrapper {
     padding: 10rem 0 0 4rem !important; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 6rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important; }
+  body section {
+    padding: 0 8rem;
+    overflow: hidden; }
+  body #about .about-text {
+    padding-top: 4rem; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh; }
+  body #skills div > div:nth-child(17) {
+    margin-top: 3rem !important; }
+  body #projects .projects-wrapper .projects-wrapper .h-slide {
+    padding: 0 !important; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+    body #contact .contact-links a > i {
+      font-size: 8rem;
+      padding-right: 1.4rem; }
+  body #contact .contact-text-wrapper {
+    margin-right: 15rem;
+    padding: 10rem 0 0 4rem !important; } }
