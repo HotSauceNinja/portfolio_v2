@@ -193,7 +193,8 @@ html {
     top: 2rem;
     font-size: 8rem; }
   body h1 {
-    font-size: 8rem !important; }
+    font-size: 8rem !important;
+    line-height: 1.2 !important; }
   body section {
     padding: 0 2rem 0 2rem;
     overflow: hidden; }
@@ -232,7 +233,7 @@ html {
     top: 2rem;
     font-size: 8rem; }
   body h1 {
-    font-size: 10rem !important;
+    font-size: 8rem !important;
     line-height: 1.2 !important; }
   body section {
     padding-right: 4rem;
@@ -271,7 +272,7 @@ html {
   body .btn-logo {
     left: 2rem;
     top: 2rem;
-    font-size: 6rem; }
+    font-size: 8rem; }
   body h1 {
     font-size: 8rem !important;
     line-height: 1.2 !important; }
@@ -295,6 +296,37 @@ html {
       padding-right: 1.4rem; }
   body #contact .contact-text-wrapper {
     margin-right: 15rem;
+    padding: 10rem 0 0 4rem !important; } }
+
+@media screen and (min-width: 1171px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important;
+    padding-top: 4rem; }
+  body section {
+    padding: 0 12%;
+    overflow: hidden; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh;
+    padding: 0 10%; }
+  body #skills div > div:nth-child(17) {
+    margin-top: 5rem !important; }
+  body #projects .h-slide {
+    display: flex;
+    flex-direction: column; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+    body #contact .contact-links a > i {
+      font-size: 8rem;
+      padding-right: 1.4rem; }
+  body #contact .contact-text-wrapper {
+    margin-right: 20rem;
     padding: 10rem 0 0 4rem !important; } }
 
 * {
