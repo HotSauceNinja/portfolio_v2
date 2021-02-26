@@ -149,8 +149,6 @@ html {
       display: none !important; }
   body #skills .skills-wrap {
     height: 80vh; }
-  body #skills div > div:nth-child(17) {
-    margin-top: 2.7rem !important; }
   body #projects {
     padding-top: 0; }
     body #projects h1 {
@@ -199,8 +197,6 @@ html {
   body #skills .skills-wrap {
     padding-top: 3rem;
     height: 80vh; }
-  body #skills div > div:nth-child(17) {
-    margin-top: 3rem !important; }
   body #projects h1 {
     padding: 0 2rem !important;
     font-size: 9rem !important; }
@@ -229,8 +225,6 @@ html {
   body #skills .skills-wrap {
     padding-top: 3rem;
     height: 80vh; }
-  body #skills div > div:nth-child(17) {
-    margin-top: 3rem !important; }
   body #projects .projects-wrapper .projects-wrapper .h-slide {
     padding: 0 !important; }
   body #contact .contact-links {
@@ -259,8 +253,6 @@ html {
     padding-top: 3rem;
     height: 80vh;
     padding: 0 10%; }
-  body #skills div > div:nth-child(17) {
-    margin-top: 5rem !important; }
   body #projects .h-slide {
     display: flex;
     flex-direction: column; }
