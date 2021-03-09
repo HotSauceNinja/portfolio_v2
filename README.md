@@ -2,7 +2,7 @@
 
 by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/) - [HotSauceNinja](https://github.com/HotSauceNinja)
 
-![home](#)
+![home](https://github.com/HotSauceNinja/portfolio_v2/blob/main/README_images/portfolio_gif.gif?raw=true)
 
 👉 [<b>TRY ME</b>](http://www.sandraspighel.com/) 👈
 
