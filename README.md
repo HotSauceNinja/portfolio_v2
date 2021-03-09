@@ -166,7 +166,7 @@ body {
  }
 ```
 
-### Incons
+### Icons
 
 I decided to use FontAwesome and Devicon to generate my icons across the project.
 Devicon allows free access to icons without having to register. For FontAwesome, you are required to create a user account before you can use icons, but the process is fast and you get free access to a great selection of icons. I used a hot chilli pepper for my open menu button (to stick to my overall theme), as well as the respective icons for my LinkedIn, GitHub and Twitter, and for each skill within the skills section.
@@ -513,6 +513,8 @@ I am overall happy with how the portfolio looks. There are small trims and chang
 
 1. A toggle to change the background colour
 2. Implementing playful animations on the home page
+3. Changing cursor when hovering over menu button
+4. Hiding the horizontal scroll bar from the projects section
 
 # License
 
