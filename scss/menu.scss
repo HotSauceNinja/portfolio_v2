@@ -8,6 +8,7 @@
   top: 2.5rem;
   font-size: 6rem;
   color: set-text-color($primary-color);
+  cursor: pointer;
 
   &:hover {
     color: $font-accent-color;
