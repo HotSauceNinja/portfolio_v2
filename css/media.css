@@ -28,7 +28,8 @@ html {
   left: 4rem;
   top: 2.5rem;
   font-size: 6rem;
-  color: #f5f5f5; }
+  color: #f5f5f5;
+  cursor: pointer; }
   .btn-logo:hover {
     color: #ff0000; }
 
