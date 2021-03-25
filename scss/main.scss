@@ -161,10 +161,11 @@ body {
         text-align: justify;
 
         a {
-          color: $font-secondary-accent-color;
+          color: $font-accent-color;
+          font-weight: 800;
 
           &:hover {
-            color: $font-accent-color;
+            animation: blinkingTextAccentPrimaryAccent 2s infinite;
           }
         }
       }
@@ -203,6 +204,7 @@ body {
     // Align title and projects area within the section area
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     h1 {
       padding: 0 8rem 0 0;
